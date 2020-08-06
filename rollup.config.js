@@ -4,13 +4,20 @@ import { terser } from 'rollup-plugin-terser'
 
 const production = !process.env.ROLLUP_WATCH
 
-export default {
+const outputs = [
+    {
+        file: 'dist/bundle.cjs.js',
+        format: 'cjs'
+    },
+    {
+        file: 'dist/bundle.esm.js',
+        format: 'esm'
+    }
+]
+
+const common = {
     input: 'src/index.js',
     external: ['react', 'lodash'],
-    output: {
-        file: 'dist/bundle.js',
-        format: 'esm'
-    },
     plugins: [
         resolve(),
         babel({
@@ -19,3 +26,8 @@ export default {
         production && terser()
     ]
 }
+
+export default outputs.map((output) => ({
+    ...common,
+    output
+}))
