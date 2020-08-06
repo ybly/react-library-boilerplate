@@ -1,5 +1,5 @@
-const something = () => {
-    return console.log('hello' + 'world')
-}
+import React from 'react'
 
-export default something
+const Title = (props) => <h1>Hello World</h1>
+
+export default Title
