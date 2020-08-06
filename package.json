@@ -19,12 +19,15 @@
         "husky": "^4.2.5",
         "lint-staged": "^10.2.11",
         "prettier": "2.0.5",
+        "rimraf": "^3.0.2",
         "rollup": "^2.23.0",
         "rollup-plugin-node-resolve": "^5.2.0"
     },
     "scripts": {
         "lint": "eslint src/\"**/*.{js,jsx}\"",
-        "lint:fix": "prettier src/\"**/*.{js,jsx}\" --write"
+        "lint:fix": "prettier src/\"**/*.{js,jsx}\" --write",
+        "prebuild": "rimraf dist",
+        "build": "rollup -c"
     },
     "husky": {
         "hooks": {
