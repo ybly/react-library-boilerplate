@@ -1,49 +1,57 @@
 {
-  "name": "react-library-boilerplate",
-  "version": "1.0.0",
-  "description": "React library boilerplate template",
-  "main": "index.js",
-  "dependencies": {
-    "react": "^16.13.1"
-  },
-  "devDependencies": {
-    "eslint": "^7.6.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.5",
-    "eslint-plugin-standard": "^4.0.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "2.0.5"
-  },
-  "scripts": {
-    "lint": "eslint src/\"**/*.{js,jsx}\"",
-    "lint:fix": "eslint src/\"**/*.{js,jsx}\" --fix"
-  },
-  "husky": {
-      "hooks": {
-          "pre-commit": "lint-staged"
-      }
-  },
-  "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.jsx": ["eslint --fix", "git add"]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ybly/react-library-boilerplate.git"
-  },
-  "keywords": [
-    "react"
-  ],
-  "author": "Bo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ybly/react-library-boilerplate/issues"
-  },
-  "homepage": "https://github.com/ybly/react-library-boilerplate#readme"
+    "name": "react-library-boilerplate",
+    "version": "1.0.0",
+    "description": "React library boilerplate template",
+    "main": "index.js",
+    "dependencies": {
+        "react": "^16.13.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.6.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-react": "^7.20.5",
+        "eslint-plugin-standard": "^4.0.1",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "prettier": "2.0.5",
+        "rollup": "^2.23.0",
+        "rollup-plugin-node-resolve": "^5.2.0"
+    },
+    "scripts": {
+        "lint": "eslint src/\"**/*.{js,jsx}\"",
+        "lint:fix": "prettier src/\"**/*.{js,jsx}\" --write"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.jsx": [
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ybly/react-library-boilerplate.git"
+    },
+    "keywords": [
+        "react"
+    ],
+    "author": "Bo",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ybly/react-library-boilerplate/issues"
+    },
+    "homepage": "https://github.com/ybly/react-library-boilerplate#readme"
 }
