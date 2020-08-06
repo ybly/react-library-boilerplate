@@ -1,0 +1,24 @@
+{
+  "name": "react-library-boilerplate",
+  "version": "1.0.0",
+  "description": "React library boilerplate template",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^7.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ybly/react-library-boilerplate.git"
+  },
+  "keywords": ["react"],
+  "author": "Bo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ybly/react-library-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ybly/react-library-boilerplate#readme"
+}

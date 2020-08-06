@@ -1,2 +1,2 @@
 # react-library-boilerplate
-React library biolerplate
+React library boilerplate template
