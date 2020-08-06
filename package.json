@@ -1,7 +1,7 @@
 {
     "name": "react-library-boilerplate",
     "version": "1.0.0",
-    "description": "React library boilerplate template",
+    "description": "React library boilerplate",
     "main": "dist/bundle.cjs.js",
     "module": "dist/bundle.esm.js",
     "sideEffects": false,
