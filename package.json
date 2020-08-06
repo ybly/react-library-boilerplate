@@ -26,6 +26,15 @@
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-terser": "^6.1.0"
     },
+    "peerDependencies": {
+        "react": ">=15.6.1",
+        "react-dom": ">=15.6.1",
+        "lodash": ">=4.17.4",
+        "moment": ">=2.18.1"
+    },
+    "engines": {
+        "node": ">=8"
+    },
     "scripts": {
         "lint": "eslint \"**/*.{js,jsx}\"",
         "lint:fix": "prettier \"**/*.{js,jsx}\" --write",
