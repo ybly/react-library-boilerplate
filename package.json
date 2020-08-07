@@ -35,7 +35,7 @@
         "moment": ">=2.18.1"
     },
     "engines": {
-        "node": ">=8"
+        "node": ">=12"
     },
     "scripts": {
         "lint": "eslint \"**/*.{js,jsx}\"",
